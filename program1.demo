@@ -1,0 +1,4 @@
+sub main {
+    foo = 42;
+    print foo;
+}

@@ -13,3 +13,9 @@ To run it:
     java -jar antlr-4.13.1-complete.jar -Werror -no-listener -visitor -Dlanguage=Python3 -o demo Demo.g4
 
 This is also provided in the shell script `antlr4.sh`
+
+## Python setup
+
+    poetry install
+    poetry shell
+    

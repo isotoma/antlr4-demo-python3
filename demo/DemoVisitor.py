@@ -64,8 +64,23 @@ class DemoVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by DemoParser#expr.
-    def visitExpr(self, ctx:DemoParser.ExprContext):
+    # Visit a parse tree produced by DemoParser#Number.
+    def visitNumber(self, ctx:DemoParser.NumberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DemoParser#AddSub.
+    def visitAddSub(self, ctx:DemoParser.AddSubContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DemoParser#Id.
+    def visitId(self, ctx:DemoParser.IdContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DemoParser#String.
+    def visitString(self, ctx:DemoParser.StringContext):
         return self.visitChildren(ctx)
 
 
