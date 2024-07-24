@@ -52,6 +52,11 @@ class Visitor(DemoVisitor):
         self.subroutines[name] = ctx.body()
 
     def visitBiz(self, ctx: DemoParser.BizContext):
-        value = self.variables[ctx.ID(0).getText()]
+        value = self.visit(ctx.expr())
         if value == 0:
-            return self.visit(self.subroutines[ctx.ID(1).getText()])
+            return self.visit(self.subroutines[ctx.ID().getText()])
+
+    def visitBgz(self, ctx: DemoParser.BgzContext):
+        value = self.visit(ctx.expr())
+        if value > 0:
+            return self.visit(self.subroutines[ctx.ID().getText()])

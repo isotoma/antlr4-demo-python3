@@ -13,8 +13,8 @@ read: 'read' ID ';';
 gosub: 'gosub' ID ';';
 assign: ID '=' expr ';';
 halt: 'halt' ';';
-biz: 'biz' ID ID ';';
-bgz: 'bgz' ID ID ';';
+biz: 'biz' expr ID ';';
+bgz: 'bgz' expr ID ';';
 
 expr:
 	expr op = ('+' | '-') expr	# AddSub

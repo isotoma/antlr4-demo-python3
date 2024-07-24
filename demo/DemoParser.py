@@ -32,13 +32,13 @@ def serializedATN():
         56,11,1,0,0,0,57,58,5,7,0,0,58,59,5,13,0,0,59,60,5,5,0,0,60,13,1,
         0,0,0,61,62,5,13,0,0,62,63,5,8,0,0,63,64,3,22,11,0,64,65,5,5,0,0,
         65,15,1,0,0,0,66,67,5,9,0,0,67,68,5,5,0,0,68,17,1,0,0,0,69,70,5,
-        10,0,0,70,71,5,13,0,0,71,72,5,13,0,0,72,73,5,5,0,0,73,19,1,0,0,0,
-        74,75,5,11,0,0,75,76,5,13,0,0,76,77,5,13,0,0,77,78,5,5,0,0,78,21,
-        1,0,0,0,79,80,6,11,-1,0,80,84,5,13,0,0,81,84,5,12,0,0,82,84,5,14,
-        0,0,83,79,1,0,0,0,83,81,1,0,0,0,83,82,1,0,0,0,84,90,1,0,0,0,85,86,
-        10,4,0,0,86,87,7,0,0,0,87,89,3,22,11,5,88,85,1,0,0,0,89,92,1,0,0,
-        0,90,88,1,0,0,0,90,91,1,0,0,0,91,23,1,0,0,0,92,90,1,0,0,0,5,27,38,
-        47,83,90
+        10,0,0,70,71,3,22,11,0,71,72,5,13,0,0,72,73,5,5,0,0,73,19,1,0,0,
+        0,74,75,5,11,0,0,75,76,3,22,11,0,76,77,5,13,0,0,77,78,5,5,0,0,78,
+        21,1,0,0,0,79,80,6,11,-1,0,80,84,5,13,0,0,81,84,5,12,0,0,82,84,5,
+        14,0,0,83,79,1,0,0,0,83,81,1,0,0,0,83,82,1,0,0,0,84,90,1,0,0,0,85,
+        86,10,4,0,0,86,87,7,0,0,0,87,89,3,22,11,5,88,85,1,0,0,0,89,92,1,
+        0,0,0,90,88,1,0,0,0,90,91,1,0,0,0,91,23,1,0,0,0,92,90,1,0,0,0,5,
+        27,38,47,83,90
     ]
 
 class DemoParser ( Parser ):
@@ -590,11 +590,12 @@ class DemoParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def ID(self, i:int=None):
-            if i is None:
-                return self.getTokens(DemoParser.ID)
-            else:
-                return self.getToken(DemoParser.ID, i)
+        def expr(self):
+            return self.getTypedRuleContext(DemoParser.ExprContext,0)
+
+
+        def ID(self):
+            return self.getToken(DemoParser.ID, 0)
 
         def getRuleIndex(self):
             return DemoParser.RULE_biz
@@ -617,7 +618,7 @@ class DemoParser ( Parser ):
             self.state = 69
             self.match(DemoParser.T__9)
             self.state = 70
-            self.match(DemoParser.ID)
+            self.expr(0)
             self.state = 71
             self.match(DemoParser.ID)
             self.state = 72
@@ -638,11 +639,12 @@ class DemoParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def ID(self, i:int=None):
-            if i is None:
-                return self.getTokens(DemoParser.ID)
-            else:
-                return self.getToken(DemoParser.ID, i)
+        def expr(self):
+            return self.getTypedRuleContext(DemoParser.ExprContext,0)
+
+
+        def ID(self):
+            return self.getToken(DemoParser.ID, 0)
 
         def getRuleIndex(self):
             return DemoParser.RULE_bgz
@@ -665,7 +667,7 @@ class DemoParser ( Parser ):
             self.state = 74
             self.match(DemoParser.T__10)
             self.state = 75
-            self.match(DemoParser.ID)
+            self.expr(0)
             self.state = 76
             self.match(DemoParser.ID)
             self.state = 77

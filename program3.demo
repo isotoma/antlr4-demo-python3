@@ -1,10 +1,11 @@
 sub main {
-    read thing;
-    print "Hello, World!";
-    biz thing foo;
+    print "Please enter a number";
+    read input;
+    bgz input - 5 foo;
+    print "The value you entered is 5 or less";
 }
 
 sub foo {
-    print "foo";
-    print "bar";
+    print "The value you entered is greater than 5";
+    halt;
 }
