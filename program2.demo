@@ -1,0 +1,9 @@
+sub main {
+    print "Hello, World!";
+    gosub foo;
+}
+
+sub foo {
+    print "foo";
+    print "bar";
+}

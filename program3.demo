@@ -1,0 +1,10 @@
+sub main {
+    read thing;
+    print "Hello, World!";
+    biz thing foo;
+}
+
+sub foo {
+    print "foo";
+    print "bar";
+}

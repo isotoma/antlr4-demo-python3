@@ -1,6 +1,7 @@
 from antlr4 import *
 from .DemoVisitor import DemoVisitor
 from .DemoParser import DemoParser
+import sys
 
 
 class Visitor(DemoVisitor):
@@ -8,19 +9,25 @@ class Visitor(DemoVisitor):
         self.variables = {}
         self.subroutines = {}
 
+    def visitPrint(self, ctx: DemoParser.PrintContext):
+        value = self.visit(ctx.expr())
+        print(value)
+
     def visitRead(self, ctx: DemoParser.ReadContext):
         variable = ctx.ID().getText()
         value = input("> ")
         self.variables[variable] = int(value)
 
-    def visitPrint(self, ctx: DemoParser.PrintContext):
-        value = self.visit(ctx.expr())
-        print(value)
+    def visitGosub(self, ctx: DemoParser.GosubContext):
+        return self.visit(self.subroutines[ctx.ID().getText()])
 
     def visitAssign(self, ctx: DemoParser.AssignContext):
         variable = ctx.ID().getText()
         value = self.visit(ctx.expr())
         self.variables[variable] = value
+
+    def visitHalt(self, ctx: DemoParser.HaltContext):
+        sys.exit(0)
 
     def visitNumber(self, ctx: DemoParser.NumberContext):
         return int(ctx.NUMBER().getText())
@@ -43,3 +50,8 @@ class Visitor(DemoVisitor):
     def visitSubroutine(self, ctx: DemoParser.SubroutineContext):
         name = ctx.ID().getText()
         self.subroutines[name] = ctx.body()
+
+    def visitBiz(self, ctx: DemoParser.BizContext):
+        value = self.variables[ctx.ID(0).getText()]
+        if value == 0:
+            return self.visit(self.subroutines[ctx.ID(1).getText()])

@@ -1,4 +1,5 @@
 sub main {
     foo = 42;
-    print foo;
+    print "Hello, World!";
+    print foo + 10;
 }
