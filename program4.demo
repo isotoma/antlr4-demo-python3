@@ -1,0 +1,5 @@
+sub main {
+    print "Please enter a number";
+    read input;
+    print input * 5;
+}

@@ -47,6 +47,14 @@ class Visitor(DemoVisitor):
         else:
             return left - right
 
+    def visitMulDiv(self, ctx: DemoParser.MulDivContext):
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        if ctx.op.type == DemoParser.MUL:
+            return left * right
+        else:
+            return left // right
+
     def visitSubroutine(self, ctx: DemoParser.SubroutineContext):
         name = ctx.ID().getText()
         self.subroutines[name] = ctx.body()

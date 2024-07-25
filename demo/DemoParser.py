@@ -10,35 +10,36 @@ else:
 
 def serializedATN():
     return [
-        4,1,17,94,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,19,97,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,1,0,4,0,26,8,0,11,
         0,12,0,27,1,1,1,1,1,1,1,1,1,1,1,1,1,2,4,2,37,8,2,11,2,12,2,38,1,
         3,1,3,1,3,1,3,1,3,1,3,1,3,3,3,48,8,3,1,4,1,4,1,4,1,4,1,5,1,5,1,5,
         1,5,1,6,1,6,1,6,1,6,1,7,1,7,1,7,1,7,1,7,1,8,1,8,1,8,1,9,1,9,1,9,
         1,9,1,9,1,10,1,10,1,10,1,10,1,10,1,11,1,11,1,11,1,11,3,11,84,8,11,
-        1,11,1,11,1,11,5,11,89,8,11,10,11,12,11,92,9,11,1,11,0,1,22,12,0,
-        2,4,6,8,10,12,14,16,18,20,22,0,1,1,0,15,16,92,0,25,1,0,0,0,2,29,
-        1,0,0,0,4,36,1,0,0,0,6,47,1,0,0,0,8,49,1,0,0,0,10,53,1,0,0,0,12,
-        57,1,0,0,0,14,61,1,0,0,0,16,66,1,0,0,0,18,69,1,0,0,0,20,74,1,0,0,
-        0,22,83,1,0,0,0,24,26,3,2,1,0,25,24,1,0,0,0,26,27,1,0,0,0,27,25,
-        1,0,0,0,27,28,1,0,0,0,28,1,1,0,0,0,29,30,5,1,0,0,30,31,5,13,0,0,
-        31,32,5,2,0,0,32,33,3,4,2,0,33,34,5,3,0,0,34,3,1,0,0,0,35,37,3,6,
-        3,0,36,35,1,0,0,0,37,38,1,0,0,0,38,36,1,0,0,0,38,39,1,0,0,0,39,5,
-        1,0,0,0,40,48,3,8,4,0,41,48,3,10,5,0,42,48,3,12,6,0,43,48,3,14,7,
-        0,44,48,3,16,8,0,45,48,3,18,9,0,46,48,3,20,10,0,47,40,1,0,0,0,47,
-        41,1,0,0,0,47,42,1,0,0,0,47,43,1,0,0,0,47,44,1,0,0,0,47,45,1,0,0,
-        0,47,46,1,0,0,0,48,7,1,0,0,0,49,50,5,4,0,0,50,51,3,22,11,0,51,52,
-        5,5,0,0,52,9,1,0,0,0,53,54,5,6,0,0,54,55,5,13,0,0,55,56,5,5,0,0,
-        56,11,1,0,0,0,57,58,5,7,0,0,58,59,5,13,0,0,59,60,5,5,0,0,60,13,1,
-        0,0,0,61,62,5,13,0,0,62,63,5,8,0,0,63,64,3,22,11,0,64,65,5,5,0,0,
-        65,15,1,0,0,0,66,67,5,9,0,0,67,68,5,5,0,0,68,17,1,0,0,0,69,70,5,
-        10,0,0,70,71,3,22,11,0,71,72,5,13,0,0,72,73,5,5,0,0,73,19,1,0,0,
-        0,74,75,5,11,0,0,75,76,3,22,11,0,76,77,5,13,0,0,77,78,5,5,0,0,78,
-        21,1,0,0,0,79,80,6,11,-1,0,80,84,5,13,0,0,81,84,5,12,0,0,82,84,5,
-        14,0,0,83,79,1,0,0,0,83,81,1,0,0,0,83,82,1,0,0,0,84,90,1,0,0,0,85,
-        86,10,4,0,0,86,87,7,0,0,0,87,89,3,22,11,5,88,85,1,0,0,0,89,92,1,
-        0,0,0,90,88,1,0,0,0,90,91,1,0,0,0,91,23,1,0,0,0,92,90,1,0,0,0,5,
-        27,38,47,83,90
+        1,11,1,11,1,11,1,11,1,11,1,11,5,11,92,8,11,10,11,12,11,95,9,11,1,
+        11,0,1,22,12,0,2,4,6,8,10,12,14,16,18,20,22,0,2,1,0,15,16,1,0,17,
+        18,96,0,25,1,0,0,0,2,29,1,0,0,0,4,36,1,0,0,0,6,47,1,0,0,0,8,49,1,
+        0,0,0,10,53,1,0,0,0,12,57,1,0,0,0,14,61,1,0,0,0,16,66,1,0,0,0,18,
+        69,1,0,0,0,20,74,1,0,0,0,22,83,1,0,0,0,24,26,3,2,1,0,25,24,1,0,0,
+        0,26,27,1,0,0,0,27,25,1,0,0,0,27,28,1,0,0,0,28,1,1,0,0,0,29,30,5,
+        1,0,0,30,31,5,13,0,0,31,32,5,2,0,0,32,33,3,4,2,0,33,34,5,3,0,0,34,
+        3,1,0,0,0,35,37,3,6,3,0,36,35,1,0,0,0,37,38,1,0,0,0,38,36,1,0,0,
+        0,38,39,1,0,0,0,39,5,1,0,0,0,40,48,3,8,4,0,41,48,3,10,5,0,42,48,
+        3,12,6,0,43,48,3,14,7,0,44,48,3,16,8,0,45,48,3,18,9,0,46,48,3,20,
+        10,0,47,40,1,0,0,0,47,41,1,0,0,0,47,42,1,0,0,0,47,43,1,0,0,0,47,
+        44,1,0,0,0,47,45,1,0,0,0,47,46,1,0,0,0,48,7,1,0,0,0,49,50,5,4,0,
+        0,50,51,3,22,11,0,51,52,5,5,0,0,52,9,1,0,0,0,53,54,5,6,0,0,54,55,
+        5,13,0,0,55,56,5,5,0,0,56,11,1,0,0,0,57,58,5,7,0,0,58,59,5,13,0,
+        0,59,60,5,5,0,0,60,13,1,0,0,0,61,62,5,13,0,0,62,63,5,8,0,0,63,64,
+        3,22,11,0,64,65,5,5,0,0,65,15,1,0,0,0,66,67,5,9,0,0,67,68,5,5,0,
+        0,68,17,1,0,0,0,69,70,5,10,0,0,70,71,3,22,11,0,71,72,5,13,0,0,72,
+        73,5,5,0,0,73,19,1,0,0,0,74,75,5,11,0,0,75,76,3,22,11,0,76,77,5,
+        13,0,0,77,78,5,5,0,0,78,21,1,0,0,0,79,80,6,11,-1,0,80,84,5,13,0,
+        0,81,84,5,12,0,0,82,84,5,14,0,0,83,79,1,0,0,0,83,81,1,0,0,0,83,82,
+        1,0,0,0,84,93,1,0,0,0,85,86,10,5,0,0,86,87,7,0,0,0,87,92,3,22,11,
+        6,88,89,10,4,0,0,89,90,7,1,0,0,90,92,3,22,11,5,91,85,1,0,0,0,91,
+        88,1,0,0,0,92,95,1,0,0,0,93,91,1,0,0,0,93,94,1,0,0,0,94,23,1,0,0,
+        0,95,93,1,0,0,0,6,27,38,47,83,91,93
     ]
 
 class DemoParser ( Parser ):
@@ -53,12 +54,14 @@ class DemoParser ( Parser ):
 
     literalNames = [ "<INVALID>", "'sub'", "'{'", "'}'", "'print'", "';'", 
                      "'read'", "'gosub'", "'='", "'halt'", "'biz'", "'bgz'", 
-                     "<INVALID>", "<INVALID>", "<INVALID>", "'+'", "'-'" ]
+                     "<INVALID>", "<INVALID>", "<INVALID>", "'+'", "'-'", 
+                     "'*'", "'/'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "NUMBER", "ID", "STRING", "ADD", "SUB", "WS" ]
+                      "NUMBER", "ID", "STRING", "ADD", "SUB", "MUL", "DIV", 
+                      "WS" ]
 
     RULE_program = 0
     RULE_subroutine = 1
@@ -93,7 +96,9 @@ class DemoParser ( Parser ):
     STRING=14
     ADD=15
     SUB=16
-    WS=17
+    MUL=17
+    DIV=18
+    WS=19
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -738,6 +743,31 @@ class DemoParser ( Parser ):
                 return visitor.visitChildren(self)
 
 
+    class MulDivContext(ExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a DemoParser.ExprContext
+            super().__init__(parser)
+            self.op = None # Token
+            self.copyFrom(ctx)
+
+        def expr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(DemoParser.ExprContext)
+            else:
+                return self.getTypedRuleContext(DemoParser.ExprContext,i)
+
+        def MUL(self):
+            return self.getToken(DemoParser.MUL, 0)
+        def DIV(self):
+            return self.getToken(DemoParser.DIV, 0)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMulDiv" ):
+                return visitor.visitMulDiv(self)
+            else:
+                return visitor.visitChildren(self)
+
+
     class IdContext(ExprContext):
 
         def __init__(self, parser, ctx:ParserRuleContext): # actually a DemoParser.ExprContext
@@ -810,33 +840,59 @@ class DemoParser ( Parser ):
                 raise NoViableAltException(self)
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 90
+            self.state = 93
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,4,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    localctx = DemoParser.AddSubContext(self, DemoParser.ExprContext(self, _parentctx, _parentState))
-                    self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                    self.state = 85
-                    if not self.precpred(self._ctx, 4):
-                        from antlr4.error.Errors import FailedPredicateException
-                        raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
-                    self.state = 86
-                    localctx.op = self._input.LT(1)
-                    _la = self._input.LA(1)
-                    if not(_la==15 or _la==16):
-                        localctx.op = self._errHandler.recoverInline(self)
-                    else:
-                        self._errHandler.reportMatch(self)
-                        self.consume()
-                    self.state = 87
-                    self.expr(5) 
-                self.state = 92
+                    self.state = 91
+                    self._errHandler.sync(self)
+                    la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
+                    if la_ == 1:
+                        localctx = DemoParser.AddSubContext(self, DemoParser.ExprContext(self, _parentctx, _parentState))
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
+                        self.state = 85
+                        if not self.precpred(self._ctx, 5):
+                            from antlr4.error.Errors import FailedPredicateException
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
+                        self.state = 86
+                        localctx.op = self._input.LT(1)
+                        _la = self._input.LA(1)
+                        if not(_la==15 or _la==16):
+                            localctx.op = self._errHandler.recoverInline(self)
+                        else:
+                            self._errHandler.reportMatch(self)
+                            self.consume()
+                        self.state = 87
+                        self.expr(6)
+                        pass
+
+                    elif la_ == 2:
+                        localctx = DemoParser.MulDivContext(self, DemoParser.ExprContext(self, _parentctx, _parentState))
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
+                        self.state = 88
+                        if not self.precpred(self._ctx, 4):
+                            from antlr4.error.Errors import FailedPredicateException
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
+                        self.state = 89
+                        localctx.op = self._input.LT(1)
+                        _la = self._input.LA(1)
+                        if not(_la==17 or _la==18):
+                            localctx.op = self._errHandler.recoverInline(self)
+                        else:
+                            self._errHandler.reportMatch(self)
+                            self.consume()
+                        self.state = 90
+                        self.expr(5)
+                        pass
+
+             
+                self.state = 95
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,4,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -860,6 +916,10 @@ class DemoParser ( Parser ):
 
     def expr_sempred(self, localctx:ExprContext, predIndex:int):
             if predIndex == 0:
+                return self.precpred(self._ctx, 5)
+         
+
+            if predIndex == 1:
                 return self.precpred(self._ctx, 4)
          
 

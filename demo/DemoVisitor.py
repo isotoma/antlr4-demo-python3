@@ -74,6 +74,11 @@ class DemoVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by DemoParser#MulDiv.
+    def visitMulDiv(self, ctx:DemoParser.MulDivContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by DemoParser#Id.
     def visitId(self, ctx:DemoParser.IdContext):
         return self.visitChildren(ctx)
