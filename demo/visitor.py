@@ -59,12 +59,25 @@ class Visitor(DemoVisitor):
         name = ctx.ID().getText()
         self.subroutines[name] = ctx.body()
 
-    def visitBiz(self, ctx: DemoParser.BizContext):
-        value = self.visit(ctx.expr())
-        if value == 0:
-            return self.visit(self.subroutines[ctx.ID().getText()])
+    def visitCompare(self, ctx: DemoParser.CompareContext):
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        if ctx.op.type == DemoParser.EQ:
+            return left == right
+        elif ctx.op.type == DemoParser.NE:
+            return left != right
+        elif ctx.op.type == DemoParser.LT:
+            return left < right
+        elif ctx.op.type == DemoParser.LE:
+            return left <= right
+        elif ctx.op.type == DemoParser.GT:
+            return left > right
+        elif ctx.op.type == DemoParser.GE:
+            return left >= right
 
-    def visitBgz(self, ctx: DemoParser.BgzContext):
-        value = self.visit(ctx.expr())
-        if value > 0:
-            return self.visit(self.subroutines[ctx.ID().getText()])
+    def visitIf(self, ctx: DemoParser.IfContext):
+        if self.visit(ctx.compare()):
+            return self.visit(ctx.body(0))
+        else:
+            if ctx.body(1):
+                return self.visit(ctx.body(1))

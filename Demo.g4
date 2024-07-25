@@ -6,15 +6,16 @@ subroutine: 'sub' ID '{' body '}';
 
 body: statement+;
 
-statement: print | read | gosub | assign | halt | biz | bgz;
+statement: print | read | gosub | assign | halt | if;
 
 print: 'print' expr ';';
 read: 'read' ID ';';
 gosub: 'gosub' ID ';';
 assign: ID '=' expr ';';
 halt: 'halt' ';';
-biz: 'biz' expr ID ';';
-bgz: 'bgz' expr ID ';';
+if: 'if' compare '{' body '}' ('else' '{' body '}')?;
+
+compare: expr op = ('==' | '!=' | '<' | '<=' | '>' | '>=') expr;
 
 expr:
 	expr op = ('+' | '-') expr		# AddSub
@@ -31,3 +32,9 @@ SUB: '-';
 MUL: '*';
 DIV: '/';
 WS: [ \t\r\n]+ -> skip;
+EQ: '==';
+NE: '!=';
+LT: '<';
+LE: '<=';
+GT: '>';
+GE: '>=';

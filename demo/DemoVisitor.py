@@ -54,13 +54,13 @@ class DemoVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by DemoParser#biz.
-    def visitBiz(self, ctx:DemoParser.BizContext):
+    # Visit a parse tree produced by DemoParser#if.
+    def visitIf(self, ctx:DemoParser.IfContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by DemoParser#bgz.
-    def visitBgz(self, ctx:DemoParser.BgzContext):
+    # Visit a parse tree produced by DemoParser#compare.
+    def visitCompare(self, ctx:DemoParser.CompareContext):
         return self.visitChildren(ctx)
 
 
