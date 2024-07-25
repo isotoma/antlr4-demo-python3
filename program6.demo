@@ -1,0 +1,13 @@
+sub main {
+    print "Please enter a number";
+    read input;
+    if input > 5 {
+        gosub foo;
+    } else {
+        print "The value you entered is 5 or less";
+    }
+}
+
+sub foo {
+    print "The value you entered is greater than 5";
+}
