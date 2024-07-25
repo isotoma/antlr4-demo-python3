@@ -55,6 +55,9 @@ class Visitor(DemoVisitor):
         else:
             return left // right
 
+    def visitParens(self, ctx: DemoParser.ParensContext):
+        return self.visit(ctx.expr())
+
     def visitSubroutine(self, ctx: DemoParser.SubroutineContext):
         name = ctx.ID().getText()
         self.subroutines[name] = ctx.body()

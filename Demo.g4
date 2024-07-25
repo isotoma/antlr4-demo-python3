@@ -17,11 +17,12 @@ biz: 'biz' expr ID ';';
 bgz: 'bgz' expr ID ';';
 
 expr:
-	expr op = ('+' | '-') expr		# AddSub
-	| expr op = ('*' | '/') expr	# MulDiv
+	expr op = ('*' | '/') expr		# MulDiv
+	| expr op = ('+' | '-') expr	# AddSub
 	| ID							# Id
 	| NUMBER						# Number
-	| STRING						# String;
+	| STRING						# String
+	| '(' expr ')'					# Parens;
 
 NUMBER: [0-9]+;
 ID: [a-zA-Z][a-zA-Z0-9]*;
@@ -30,4 +31,6 @@ ADD: '+';
 SUB: '-';
 MUL: '*';
 DIV: '/';
+LPAREN: '(';
+RPAREN: ')';
 WS: [ \t\r\n]+ -> skip;
