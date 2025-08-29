@@ -1,21 +1,37 @@
 # antlr4-demo-python3
 
-## Running ANTLR4 on the grammar file
-
-You only need to do this if you change the grammar file `Demo.g4`.
+## Get ANTLR
 
 Only once, get the JAR for antlr:
 
     curl -o antlr-4.13.1-complete.jar https://www.antlr.org/download/antlr-4.13.1-complete.jar
 
-To run it:
+You'll need java if not already installed
 
-    java -jar antlr-4.13.1-complete.jar -Werror -no-listener -visitor -Dlanguage=Python3 -o demo Demo.g4
+    sudo apt install default-jre
 
-This is also provided in the shell script `antlr4.sh`
+## Running ANTLR4 on the grammar file
+
+You only need to do this if you change the grammar file `Demo.g4`.
+
+    `./antlr4.sh`
 
 ## Python setup
+
+    pyenv local 3.12
+    pip install poetry # if not already
+    poetry self add poetry-plugin-shell
 
     poetry install
     poetry shell
     
+## Running a program
+
+To execute a program in the Demo language
+
+    ./democli program1.demo
+
+
+## ANTLR debugging
+
+You can view the tree - TBC
